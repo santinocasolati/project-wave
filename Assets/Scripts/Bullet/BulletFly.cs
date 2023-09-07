@@ -6,17 +6,15 @@ public class BulletFly : MonoBehaviour
 {
     public float speed = 10f;
 
-    private float currentTime;
-    public float flyTime;
+    public float flyDistance;
     private Vector3 moveDirection;
 
+    private Vector3 initialPos;
     [SerializeField] private int bulletDamage;
 
-    private void HandleTimer()
+    private void HandleDistance()
     {
-        currentTime += Time.deltaTime;
-
-        if (currentTime >= flyTime)
+        if (Vector3.Distance(initialPos, transform.position) > flyDistance)
         {
             Destroy(gameObject);
         }
@@ -42,6 +40,11 @@ public class BulletFly : MonoBehaviour
     {
         transform.Translate(moveDirection * speed * Time.deltaTime);
 
-        HandleTimer();
+        HandleDistance();
+    }
+
+    private void Start()
+    {
+        initialPos = transform.position;
     }
 }
