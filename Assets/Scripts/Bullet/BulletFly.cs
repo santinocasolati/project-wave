@@ -10,6 +10,8 @@ public class BulletFly : MonoBehaviour
     private float currentTime;
     public float flyTime;
 
+    [SerializeField] private int bulletDamage;
+
     public void SetDirection(Vector3 direction)
     {
         moveDirection = direction;
@@ -22,6 +24,17 @@ public class BulletFly : MonoBehaviour
 
         if (currentTime >= flyTime)
         {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        HealthHandler hit = collision.GetComponent<HealthHandler>();
+
+        if (hit != null)
+        {
+            hit.ApplyDamage(bulletDamage);
             Destroy(gameObject);
         }
     }

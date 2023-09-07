@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127215570666574077}
   - component: {fileID: 3798598277528142719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7740766745559449430}
   - component: {fileID: 4356039602778187957}
   - component: {fileID: 2189658287511300004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,3 +177,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   flyTime: 1.5
+  bulletDamage: 1

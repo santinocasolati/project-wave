@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7066919749973563303}
   - component: {fileID: 2529679350305875130}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: 3413877242075433874}
   - component: {fileID: 5242513050691753535}
   - component: {fileID: 1341594379931137750}
-  m_Layer: 0
+  - component: {fileID: 1654227328899873635}
+  m_Layer: 7
   m_Name: MeleeEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,3 +208,18 @@ MonoBehaviour:
   moveSpeed: 2
   minDistance: 1
   maxDistance: 5
+--- !u!114 &1654227328899873635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345891409362284447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce11250767a593489164c4ca1023e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health: 0
+  canBeHealed: 0
