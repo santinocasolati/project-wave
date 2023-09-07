@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 5524140458190661435}
   - component: {fileID: 5480098895550348203}
   - component: {fileID: 4304928752277315422}
-  - component: {fileID: 7017258050869424981}
   - component: {fileID: 4769870979737672739}
   - component: {fileID: 5424594724333492717}
   m_Layer: 6
@@ -208,20 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
---- !u!114 &7017258050869424981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5719136862331440896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755a49d263fe40e41a750c18b6dc20e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 10
-  sprite: {fileID: 8234447766448551310}
+  rotationSpeed: 720
 --- !u!114 &4769870979737672739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDelay: 0.5
   bulletPrefab: {fileID: 5719703042306296483, guid: 5fec811c04d308d498d15cb3de7b6feb, type: 3}
-  sprite: {fileID: 8234447766448551310}
 --- !u!114 &5424594724333492717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 7040543178839900474}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.481, y: 0.008, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

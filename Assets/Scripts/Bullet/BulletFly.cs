@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class BulletFly : MonoBehaviour
 {
-    private Vector3 moveDirection;
     public float speed = 10f;
 
     private float currentTime;
     public float flyTime;
+    private Vector3 moveDirection;
 
     [SerializeField] private int bulletDamage;
-
-    public void SetDirection(Vector3 direction)
-    {
-        moveDirection = direction;
-        moveDirection.z = transform.position.z;
-    }
 
     private void HandleTimer()
     {
@@ -26,6 +20,11 @@ public class BulletFly : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetDirection(Vector3 direction)
+    {
+        moveDirection = direction;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,7 +40,7 @@ public class BulletFly : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(moveDirection.normalized * speed * Time.deltaTime);
+        transform.Translate(moveDirection * speed * Time.deltaTime);
 
         HandleTimer();
     }
