@@ -25,7 +25,7 @@ public class Shoot : MonoBehaviour
         currentTimer = 0f;
 
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        bullet.GetComponent<BulletFly>().SetDirection(transform.up);
+        bullet.GetComponent<BulletFly>().SetDirection(transform.right);
     }
 
     private void DelayHandler()
