@@ -32,8 +32,9 @@ public class BulletFly : MonoBehaviour
         if (hit != null)
         {
             hit.ApplyDamage(bulletDamage);
-            Destroy(gameObject);
         }
+
+        Destroy(gameObject);
     }
 
     private void Update()
