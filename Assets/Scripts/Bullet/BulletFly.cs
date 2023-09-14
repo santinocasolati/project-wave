@@ -28,13 +28,12 @@ public class BulletFly : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         HealthHandler hit = collision.GetComponent<HealthHandler>();
+        Destroy(gameObject);
 
         if (hit != null)
         {
             hit.ApplyDamage(bulletDamage);
         }
-
-        Destroy(gameObject);
     }
 
     private void Update()

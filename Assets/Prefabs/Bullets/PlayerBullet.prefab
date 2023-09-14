@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e8f46ca8406ec4f960ea1a72dfda4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 30
   flyDistance: 5
   bulletDamage: 1
 --- !u!50 &526971367199237848
