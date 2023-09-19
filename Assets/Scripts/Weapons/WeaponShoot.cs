@@ -36,10 +36,6 @@ public class WeaponShoot : MonoBehaviour
             if (currentTime >= shootDelay)
             {
                 anim.SetBool("Shoot", false);
-            }
-
-            if (currentTime >= shootDelay + 0.01f)
-            {
                 shooted = false;
                 currentTime = 0f;
             }
