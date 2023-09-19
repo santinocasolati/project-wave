@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c2f2b76cf9464664e935ef8a2d8f4aff
+guid: 4a68ca545addd5f47b24735ae05b2085
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Basement-Structure_0
+      name: Ground-Floor-Structure_0
       rect:
         serializedVersion: 2
         x: 0
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e828a52e286900549bceab2ec39845b0
-      internalID: 783276869
+      spriteID: 2f1274408d765d94b9e6de18e42bc77e
+      internalID: 1397048051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement-Structure_1
+      name: Ground-Floor-Structure_1
       rect:
         serializedVersion: 2
         x: 64
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4911511a236b225498c88c029bf04dea
-      internalID: 1892248178
+      spriteID: d07f7e2364614d3468841e616dcb25bc
+      internalID: 1832511543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement-Structure_2
+      name: Ground-Floor-Structure_2
       rect:
         serializedVersion: 2
         x: 128
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 554346ef3d138c648a131cf26e2c2af6
-      internalID: -2145835284
+      spriteID: e6eea157e42fcda4a927ebb8ed0a77e3
+      internalID: -1750296284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement-Structure_3
+      name: Ground-Floor-Structure_3
       rect:
         serializedVersion: 2
         x: 192
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3af9ffb099825b448b869624a560871
-      internalID: -1441850468
+      spriteID: c85c9b50c45c5fb45bf60c26639146bd
+      internalID: 1098303191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement-Structure_4
+      name: Ground-Floor-Structure_4
       rect:
         serializedVersion: 2
         x: 256
@@ -247,8 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2be3fbf9638f6f4a8431e01f14d520f
-      internalID: 1230388815
+      spriteID: d9580bb09ac60f74ab091a574443555f
+      internalID: 115300198
       vertices: []
       indices: 
       edges: []
@@ -264,11 +264,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Basement-Structure_0: 783276869
-      Basement-Structure_1: 1892248178
-      Basement-Structure_2: -2145835284
-      Basement-Structure_3: -1441850468
-      Basement-Structure_4: 1230388815
+      Ground-Floor-Structure_0: 1397048051
+      Ground-Floor-Structure_1: 1832511543
+      Ground-Floor-Structure_2: -1750296284
+      Ground-Floor-Structure_3: 1098303191
+      Ground-Floor-Structure_4: 115300198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
