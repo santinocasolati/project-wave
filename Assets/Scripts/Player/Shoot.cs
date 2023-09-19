@@ -4,46 +4,33 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    private bool shooting;
-    private float currentTimer;
-    public float shootDelay;
-    [SerializeField] private GameObject bulletPrefab;
-
     private void CheckInputs()
     {
         float shootInput = Input.GetAxis("Shoot");
 
-        if (shootInput > 0 && !shooting)
+        Transform weapon = transform.Find("WeaponSlot").GetChild(0);
+
+        if (weapon != null)
         {
-            Fire();
+            if (shootInput > 0 && !weapon.gameObject.GetComponent<WeaponShoot>().shooted)
+            {
+                Fire();
+            }
         }
     }
 
     private void Fire()
     {
-        shooting = true;
-        currentTimer = 0f;
+        Transform weapon = transform.Find("WeaponSlot").GetChild(0);
 
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        bullet.GetComponent<BulletFly>().SetDirection(transform.right);
-    }
-
-    private void DelayHandler()
-    {
-        if (shooting)
+        if (weapon != null)
         {
-            currentTimer += Time.deltaTime;
-
-            if (currentTimer >= shootDelay)
-            {
-                shooting = false;
-            }
+            weapon.gameObject.GetComponent<WeaponShoot>().Shoot(transform.right);
         }
     }
 
     private void Update()
     {
         CheckInputs();
-        DelayHandler();
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10ccddb2033378b40bd53c0d4dec35d7
+guid: 6a104eb10404257409755d5f5a50ab0d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,11 +149,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_0
+      name: Pistol_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 162
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -163,18 +163,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b5ae50134e54f48850d6c249558085
-      internalID: 726959765
+      spriteID: bac166185541ea54b9090de5c85714be
+      internalID: 1385237913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_1
+      name: Pistol_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 162
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5562e55479c9f544859dd5c0dc58920
-      internalID: 1452848870
+      spriteID: 2ae0a9c10a2ec4b42a931eb7b59d8334
+      internalID: -1297202965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_2
+      name: Pistol_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 130
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -205,18 +205,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed45485c64a3f9b41a8621bc0b63df12
-      internalID: 949252381
+      spriteID: 7f642e6ae10b4b44599b51229fee4a21
+      internalID: 320760013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_3
+      name: Pistol_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 130
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -226,18 +226,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55473b5c32ebd6a4590321af5c630cda
-      internalID: 667321110
+      spriteID: 7780129e392fa8d4c8ac08f6eb23ee5d
+      internalID: 827845274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_4
+      name: Pistol_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 98
+        x: 128
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -247,71 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef23885a581402d4e9f2c83a98cfbf77
-      internalID: -1826103732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 66
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9cba562d4b1180b4e82381e2f51933df
-      internalID: -1764606984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 34
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0acbc43c6ce5d541bcedac2d7459d46
-      internalID: -793099846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 2
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea2ff91e1c9c4ed4a8ad75df9492bf95
-      internalID: -913890460
+      spriteID: bc03eea01be35644aaf529f0821b5f74
+      internalID: -872692364
       vertices: []
       indices: 
       edges: []
@@ -327,14 +264,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_0: 726959765
-      Player_1: 1452848870
-      Player_2: 949252381
-      Player_3: 667321110
-      Player_4: -1826103732
-      Player_5: -1764606984
-      Player_6: -793099846
-      Player_7: -913890460
+      Pistol_0: 1385237913
+      Pistol_1: -1297202965
+      Pistol_2: 320760013
+      Pistol_3: 827845274
+      Pistol_4: -872692364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MeleeAttack
+  m_Name: PistolIdle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,8 @@ AnimationClip:
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
-    - time: 0.16666667
-      value: {fileID: 1452848870, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - time: 0.41666666
-      value: {fileID: 667321110, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - time: 0.46666667
-      value: {fileID: -1826103732, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - time: 0.65
-      value: {fileID: -1764606984, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - time: 0.7
-      value: {fileID: -793099846, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
+    - time: 0
+      value: {fileID: 1385237913, guid: 6a104eb10404257409755d5f5a50ab0d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -52,17 +44,13 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1452848870, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - {fileID: 667321110, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - {fileID: -1826103732, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - {fileID: -1764606984, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
-    - {fileID: -793099846, guid: 10ccddb2033378b40bd53c0d4dec35d7, type: 3}
+    - {fileID: 1385237913, guid: 6a104eb10404257409755d5f5a50ab0d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.71666664
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
