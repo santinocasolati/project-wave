@@ -9,7 +9,11 @@ public class MeleeAtack : MonoBehaviour
     private float currentCoolDown;
     private bool canAttack = true;
 
-    Animator anim;
+    private float animTime = 0.717f;
+
+    private Animator anim;
+    private Shoot shoot;
+    private Transform weaponSlot;
 
     private void CheckInput()
     {
@@ -22,10 +26,16 @@ public class MeleeAtack : MonoBehaviour
         {
             currentCoolDown += Time.deltaTime;
 
+            if (currentCoolDown >= animTime)
+            {
+                anim.SetBool("isMelee", false);
+                weaponSlot.GetChild(0).gameObject.SetActive(true);
+                shoot.canShoot = true;
+            }
+
             if (currentCoolDown >= coolDown)
             {
                 canAttack = true;
-                anim.SetBool("isMelee", false);
                 currentCoolDown = 0f;
             }
         }
@@ -35,14 +45,18 @@ public class MeleeAtack : MonoBehaviour
     {
         if (canAttack)
         {
+            weaponSlot.GetChild(0).gameObject.SetActive(false);
             anim.SetBool("isMelee", true);
             canAttack = false;
+            shoot.canShoot = false;
         }
     }
 
     void Start()
     {
         anim = transform.GetChild(0).GetComponent<Animator>();
+        weaponSlot = transform.Find("WeaponSlot");
+        shoot = transform.gameObject.GetComponent<Shoot>();
     }
 
     void Update()

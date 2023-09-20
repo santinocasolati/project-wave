@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    public bool canShoot = true;
+
     private void CheckInputs()
     {
         float shootInput = Input.GetAxis("Shoot");
@@ -12,7 +14,7 @@ public class Shoot : MonoBehaviour
 
         if (weapon != null)
         {
-            if (shootInput > 0 && !weapon.gameObject.GetComponent<WeaponShoot>().shooted)
+            if (shootInput > 0 && !weapon.gameObject.GetComponent<WeaponShoot>().shooted && canShoot)
             {
                 Fire();
             }
