@@ -8,6 +8,14 @@ public class CameraFollow : MonoBehaviour
     public int camOffset;
     public float camSpeed;
 
+    public void FastUpdate()
+    {
+        Vector3 target = player.position;
+        target.z = camOffset;
+
+        transform.position = target;
+    }
+
     private void Update()
     {
         Vector3 target = player.position;
